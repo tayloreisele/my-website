@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    color: black;
+    font-family: Inter;
+    max-width: 1440px;
+  }
+
+
+  .social-media {
+    list-style-type: none;
+    display: flex;
+    color: black;
+    gap: 5px;
+    padding-top: 10%;
+  }
+
+
+  @media screen and (max-width: 900px) {
+
+    body {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+    
+    .about-me-container {
+      flex-direction: column;
+      
+    }
+
+
+}
+
+
+.typing-container {
+  font-size: 20px;
+  min-width: 55%;
+}
+
+.auto-type {
+  font-size: 50px;
+}
+
+.memoji {
+  display: flex;
+  width: 300px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.about-me-container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  vertical-align: middle;
+  
+  padding: 30px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.typing-container {
+  z-index: 2;
+}
+
+.about-me-container::before {
+  content: '';
+  position: absolute;
+  width: 270px;
+  height: 380%;
+  background: linear-gradient(#00FF00, #00FF00);
+  animation: rotate 4s linear infinite;
+}
+
+.about-me-container::after {
+  content: '';
+  position: absolute;
+  background: white;
+  inset: 5px;
+  border-radius: 16px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.tools {
+  padding-top: 10px;
+  font-size: 16px;
+  
+}
+
+.fa-html5 {
+  font-size: 40px;
+  padding-right: 5px;
+  color: #DC4A25;
+}
+
+.fa-css3-alt {
+  font-size: 40px;
+  padding-right: 5px;
+  color: #1F8EE7;
+}
+
+.fa-js {
+  font-size: 40px;
+  padding-right: 5px;
+  color: #EBD41C;
+}
+
+.fa-twitter {
+  color: black;
+  font-size: 30px;
+  transition: transform 250ms;
+}
+
+.fa-linkedin-in {
+  color: black;
+  font-size: 30px;
+  transition: transform 250ms;
+}
+
+.fa-github {
+  color: black;
+  font-size: 30px;
+  transition: transform 250ms;
+}
+
+.fa-github:hover {
+  color: #00FF00;
+  transform: translateY(-10px);
+}
+
+.fa-linkedin-in:hover {
+  color: #00FF00;
+  transform: translateY(-10px);
+}
+
+.fa-twitter:hover {
+  color: #00FF00;
+  transform: translateY(-10px);
+}
+
+
