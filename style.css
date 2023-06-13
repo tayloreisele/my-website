@@ -6,13 +6,16 @@
 
 body {
     background-color: black;
-    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     color: black;
     font-family: Inter;
     max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
 
 
@@ -55,9 +58,9 @@ body {
   @media screen and (max-width: 900px) {
 
     body {
-      width: 90%;
       margin: auto;
-      
+      height: 700px;
+      padding: 10px !important;
     }
     
     .about-me-container {
@@ -65,7 +68,20 @@ body {
       
     }
 
+    p, h1 {
+      text-align: center;
+    }
+    
 
+    .typing-container {
+      width: 100% !important;
+    }
+
+    .social-media {
+      padding-top: 15px;
+      justify-content: center;
+      padding-bottom: 15px;
+    }
 }
 
 
