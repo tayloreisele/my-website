@@ -249,6 +249,12 @@ body {
   transition: transform 250ms;
 }
 
+.fa-file-arrow-down {
+  font-size: 30px;
+  transition: transform 250ms;
+  color: black;
+}
+
 .fa-github {
   color: black;
   font-size: 30px;
@@ -277,6 +283,11 @@ body {
 }
 
 .fa-dev:hover {
+  color: #00FF00;
+  transform: translateY(-10px);
+}
+
+.fa-file-arrow-down:hover {
   color: #00FF00;
   transform: translateY(-10px);
 }
