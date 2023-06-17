@@ -10,7 +10,6 @@ body {
   margin-right: auto;
   width: 90%;
   color: black;
-  /* font-family: Inter; */
   font-family: -apple-system, BlinkMacSystemFont, Inter;
   max-width: 1440px;
   display: flex;
@@ -25,7 +24,7 @@ body {
   display: flex;
   color: black;
   gap: 5px;
-  padding-top: 10%;
+  padding-top: 10px;
 }
 
 .mobile-only {
@@ -86,6 +85,11 @@ body {
     text-align: center;
   }
 
+  .clock-container {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
 
   .typing-container {
     width: 100% !important;
@@ -94,7 +98,7 @@ body {
   .social-media {
     padding-top: 15px;
     justify-content: center;
-    padding-bottom: 15px;
+    
   }
 }
 
@@ -116,13 +120,9 @@ body {
 
 .wave {
   animation-name: wave-animation;
-  /* Refers to the name of your @keyframes element below */
   animation-duration: 2.1s;
-  /* Change to speed up or slow down */
   animation-iteration-count: infinite;
-  /* Never stop waving :) */
   transform-origin: 70% 70%;
-  /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
@@ -135,7 +135,6 @@ body {
     transform: rotate(14deg);
   }
 
-  /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
@@ -156,7 +155,6 @@ body {
     transform: rotate(0deg);
   }
 
-  /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
@@ -282,4 +280,12 @@ body {
 .fa-dev:hover {
   color: #00FF00;
   transform: translateY(-10px);
+}
+
+#clock {
+  font-size: 14px;
+}
+
+.local-time {
+  font-size: 14px;
 }
