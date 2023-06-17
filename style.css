@@ -261,12 +261,6 @@ body {
   transition: transform 250ms;
 }
 
-.fa-dev {
-  font-size: 30px;
-  color: black;
-  transition: transform 250ms;
-}
-
 .fa-github:hover {
   color: #00FF00;
   transform: translateY(-10px);
@@ -278,11 +272,6 @@ body {
 }
 
 .fa-twitter:hover {
-  color: #00FF00;
-  transform: translateY(-10px);
-}
-
-.fa-dev:hover {
   color: #00FF00;
   transform: translateY(-10px);
 }
